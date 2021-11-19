@@ -38,5 +38,20 @@ namespace MaximumGeneric
                 return thirdnumber;
             }
         }
+        public string Computemaximum(string firstword, string secondword, string thirdword)
+        {
+            if (firstword.CompareTo(secondword) > 0 && firstword.CompareTo(thirdword) > 0)
+            {
+                return firstword;
+            }
+            if (secondword.CompareTo(firstword) > 0 && secondword.CompareTo(thirdword) > 0)
+            {
+                return secondword;
+            }
+            else
+            {
+                return thirdword;
+            }
+        }
     }
 }
