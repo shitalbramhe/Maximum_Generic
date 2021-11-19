@@ -15,7 +15,7 @@ namespace MaximumGeneric
             while (flag)
             {
                 Console.WriteLine("Welcome to Generic maximum problems");
-                Console.WriteLine("Enter choice of program : \n1. Maximum integer \n2. Exit");
+                Console.WriteLine("Enter choice of program : \n1. Maximum integer \n2. Maximum Float \n3. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -28,6 +28,14 @@ namespace MaximumGeneric
                         Console.WriteLine("The maximum number is : " + result);
                         break;
                     case 2:
+                        Console.WriteLine("Enter first number, second number,third number");
+                        float firstnum = float.Parse(Console.ReadLine());
+                        float secondnum = float.Parse(Console.ReadLine());
+                        float thirdnum = float.Parse(Console.ReadLine());
+                        float result2 = Max.Computemax1(firstnum, secondnum, thirdnum);
+                        Console.WriteLine("The maximum number is : " + result2);
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
